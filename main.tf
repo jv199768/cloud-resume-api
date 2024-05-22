@@ -3,7 +3,7 @@ resource "aws_lambda_function" "example" {
   function_name = "aws_resume_python"
 
   # The bucket name as created earlier with "aws s3api create-bucket"
-  s3_bucket = "s3demo01025025abc"
+  s3_bucket = "s3demo01025026abc"
   s3_key    = "lambda_function.zip"
   role = "${aws_iam_role.lambda_exec.arn}"
   handler = "lambda_function.handler"
